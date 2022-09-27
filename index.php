@@ -1,3 +1,12 @@
+<?php
+$bigTitle=$smallTitle=$cardText=$buttonText="";
+    if (isset($_POST["bigTitle"])) {
+        $bigTitle = $_POST["bigTitle"];
+        $smallTitle = $_POST["smallTitle"];
+        $cardText = $_POST["cardText"];
+        $buttonText = $_POST["buttonText"];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,12 +29,12 @@ $txt2 = "Во второе поле вы ввели";
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        Featured
+                        <?php echo $bigTitle; ?>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title"><?php echo $smallTitle; ?></h5>
+                        <p class="card-text"><?php echo $cardText; ?></p>
+                        <a href="#" class="btn btn-primary"><?php echo $buttonText; ?></a>
                     </div>
                 </div>
             </div>
@@ -35,7 +44,7 @@ $txt2 = "Во второе поле вы ввели";
                         Featured
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
+                        <h5 class="card-title"></h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
@@ -57,29 +66,17 @@ $txt2 = "Во второе поле вы ввели";
     </div>
     <h2>POST/GET И всё такое</h2>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-        <p>Field1</p>
-        <input type="text" name="field1">
-        <p> Field2</p>
-        <input type="text" name="field2">
+        <p>Большой заголовок</p>
+        <input type="text" name="bigTitle">
+        <p>Маленький заголовок</p>
+        <input type="text" name="smallTitle">
+        <p>Текст карточки</p>
+        <input type="text" name="cardText">
+        <p>Текст на кнопке</p>
+        <input type="text" name="buttonText">
         <input type="submit" value="Жмяк!">
     </form>
-    <p>Place for results</p>
-    <?php
-
-    if (isset($_POST["field1"])) {
-        echo "<p>" . $txt1 . " " . $_POST["field1"] . "</p>";
-        echo "<p>" . $txt2 . "<b>" . " " . $_POST["field2"] . "</b></p>";
-
-        if ($_POST["field1"] == $_POST["field2"]) {
-            echo "<p>Креатив закончился</p>";
-        } else {
-            echo "<p>Ну хоть что-то оригинальное</p>";
-        }
-        if ($_POST["field1"] == "field1") {
-            echo "<p>МОЗГ: Off</p>";
-        }
-    }
-    ?>
+    <p name="debug">Place for results</p>
 </body>
 
 </html>
