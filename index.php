@@ -1,11 +1,13 @@
 <?php
-$bigTitle=$smallTitle=$cardText=$buttonText="";
-    if (isset($_POST["bigTitle"])) {
-        $bigTitle = $_POST["bigTitle"];
-        $smallTitle = $_POST["smallTitle"];
-        $cardText = $_POST["cardText"];
-        $buttonText = $_POST["buttonText"];
-    }
+$bigTitle = $smallTitle = $cardText = $buttonText = "";
+$bigTitle1 = $smallTitle1 = $cardText1 = $buttonText1 = "";
+$bigTitle2 = $smallTitle2 = $cardText2 = $buttonText2 = "";
+if (isset($_POST["bigTitle"])) {
+    $bigTitle = $_POST["bigTitle"];
+    $smallTitle = $_POST["smallTitle"];
+    $cardText = $_POST["cardText"];
+    $buttonText = $_POST["buttonText"];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,11 +20,6 @@ $bigTitle=$smallTitle=$cardText=$buttonText="";
     <link href="bootstrap/js/bootstrap.min.js">
     <title>1403</title>
 </head>
-<?php
-$txt1 = "В первое поле вы ввели";
-$txt2 = "Во второе поле вы ввели";
-?>
-
 <body>
     <div class="container text-center">
         <div class="row">
@@ -41,24 +38,24 @@ $txt2 = "Во второе поле вы ввели";
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        Featured
+                    <?php echo $bigTitle1; ?>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title"><?php echo $smallTitle1; ?></h5>
+                        <p class="card-text"><?php echo $cardText1; ?></p>
+                        <a href="#" class="btn btn-primary"><?php echo $buttonText1; ?></a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        Featured
+                    <?php echo $bigTitle2; ?>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title"><?php echo $smallTitle2; ?></h5>
+                        <p class="card-text"><?php echo $cardText2; ?></p>
+                        <a href="#" class="btn btn-primary"><?php echo $buttonText2; ?></a>
                     </div>
                 </div>
             </div>
@@ -66,6 +63,11 @@ $txt2 = "Во второе поле вы ввели";
     </div>
     <h2>POST/GET И всё такое</h2>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+        <select name="cardNumber">
+            <option value="1">Карточка 1</option>
+            <option value="2">Карточка 2</option>
+            <option value="3">Карточка 3</option>
+        </select>
         <p>Большой заголовок</p>
         <input type="text" name="bigTitle">
         <p>Маленький заголовок</p>
