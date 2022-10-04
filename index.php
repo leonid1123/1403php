@@ -2,11 +2,31 @@
 $bigTitle = $smallTitle = $cardText = $buttonText = "";
 $bigTitle1 = $smallTitle1 = $cardText1 = $buttonText1 = "";
 $bigTitle2 = $smallTitle2 = $cardText2 = $buttonText2 = "";
+$cardNumber=0;
 if (isset($_POST["bigTitle"])) {
-    $bigTitle = $_POST["bigTitle"];
-    $smallTitle = $_POST["smallTitle"];
-    $cardText = $_POST["cardText"];
-    $buttonText = $_POST["buttonText"];
+    $cardNumber = $_POST["cardNumber"];
+    switch ($cardNumber){
+        case 1:
+            $bigTitle = $_POST["bigTitle"];
+            $smallTitle = $_POST["smallTitle"];
+            $cardText = $_POST["cardText"];
+            $buttonText = $_POST["buttonText"];
+            break;
+        case 2:
+            $bigTitle1 = $_POST["bigTitle"];
+            $smallTitle1 = $_POST["smallTitle"];
+            $cardText1 = $_POST["cardText"];
+            $buttonText1 = $_POST["buttonText"];
+            break;
+        case 3:
+            $bigTitle2= $_POST["bigTitle"];
+            $smallTitle2 = $_POST["smallTitle"];
+            $cardText2 = $_POST["cardText"];
+            $buttonText2 = $_POST["buttonText"];
+            break;
+        default:
+            break;
+    }
 }
 ?>
 <!DOCTYPE html>
