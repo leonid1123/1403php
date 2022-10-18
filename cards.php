@@ -1,14 +1,7 @@
 <?php
     $mysqli = new mysqli("localhost", "pk1403", "123456", "cards");
     echo $mysqli->host_info . "\n";
-    $stmt = $mysqli->prepare("INSERT INTO cardcontent(cardid, bigTitleText, smallTitleText, cardText, buttonText, buttonLink) VALUES (null,?,?,?,?,?)");
-    $bigTitleText = "Большой заголовок ПХП";
-    $smallTitleText = "Маленький заголовок ПХП";
-    $cardText="азазазазазазазаза азазаза зззаааа!";
-    $buttonText = "Пуньк!";
-    $buttonLink = "https://kuda.to";
-    $stmt->bind_param("sssss", $bigTitleText,$smallTitleText,$cardText,$buttonText,$buttonLink);
-    $stmt->execute();
+    $result = $mysqli->query("SELECT bigTitleText, smallTitleText, cardText, buttonText, buttonLink FROM cardcontent");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,16 +18,21 @@
 <body>
     <div class="container-lg">
         <h1>Пример работы PHP и MySQL</h1>
-        <div class="card">
-            <div class="card-header">
-                Featured
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+        <?php
+        $k=10;
+        while ($row = $result->fetch_row()) {
+        echo '<div class="card">';
+        echo    '<div class="card-header">';
+        echo        $row[0];
+        echo    '</div>';
+        echo    '<div class="card-body">';
+        echo       '<h5 class="card-title">'.$row[1].'</h5>';
+        echo        '<p class="card-text">'.$row[2].'</p>';
+        echo        '<a href="'.$row[4].'" class="btn btn-primary">'.$row[3].'</a>';
+        echo    '</div>';
+        echo '</div>';
+        }
+        ?>
     </div>
 </body>
 
