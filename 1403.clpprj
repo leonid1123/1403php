@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project name="C:\xampp\htdocs\1403\1403.clpprj">
+ <settings>
+  <PM_URL><![CDATA[http://localhost/C:/xampp/htdocs/1403]]></PM_URL>
+  <PM_HOME_URL><![CDATA[http://localhost/C:/xampp/htdocs/1403]]></PM_HOME_URL>
+  <PM_LIBS><![CDATA[]]></PM_LIBS>
+  <PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION>
+  <PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR>
+  <PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE>
+  <PM_LANGUAGE><![CDATA[]]></PM_LANGUAGE>
+ </settings>
+ <removed value=";"/>
+ <added value=""/>
+ <lastopfiles>
+  <file name="C:\xampp\htdocs\1403\cards.php"/>
+  <lastactivefile name=""/>
+ </lastopfiles>
+ <errors version="1.12.0"/>
+ <cakedata/>
+ <dplmenupath/>
+ <laravael/>
+ <smartyassings/>
+ <twigtemplate/>
+ <yiidata/>
+ <todoblock>
+  <todofile name="C:\xampp\htdocs\1403\bootstrap\js\bootstrap.bundle.js">
+   <todo name="todo: tooltip passes `false` instead of selector, so we need to check" pos="54;407"/>
+   <todo name="TODO: this is now unused; remove later along with prev()" pos="5;1074"/>
+   <todo name="TODO:v6 remove boolean support" pos="5;1290"/>
+   <todo name="TODO use `document.visibilityState`" pos="13;1337"/>
+   <todo name="todo: change tests that use empty divs to avoid this check" pos="9;1542"/>
+   <todo name="todo: v6 revert #37011 &amp; change markup https://getbootstrap.com/docs/5.2/forms/input-group/" pos="7;3888"/>
+   <todo name="todo:v6 remove" pos="71;4108"/>
+   <todo name="todo: v6 revert #37011 &amp; change markup https://getbootstrap.com/docs/5.2/forms/input-group/" pos="31;4206"/>
+   <todo name="todo v6 remove this OR make it optional" pos="9;5724"/>
+   <todo name="todo: remove this check on v6" pos="63;5841"/>
+   <todo name="todo: on v6 the following can be achieved with CSS only" pos="67;5848"/>
+   <todo name="TODO: v6 @deprecated, keep it for backwards compatibility reasons" pos="5;6274"/>
+   <todo name="TODO v6 @deprecated, keep it for backwards compatibility reasons" pos="5;6282"/>
+   <todo name="TODO: on v6 target should be given explicitly &amp; remove the {target: 'ss-target'} case" pos="7;6346"/>
+   <todo name="TODO: v6 Only for backwards compatibility reasons. Use rootMargin only" pos="67;6347"/>
+   <todo name="todo:v6: could be only `tab`" pos="108;6570"/>
+   <todo name="todo: should Throw exception on v6" pos="17;6584"/>
+  </todofile>
+  <todofile name="C:\xampp\htdocs\1403\bootstrap\js\bootstrap.esm.js">
+   <todo name="todo: tooltip passes `false` instead of selector, so we need to check" pos="52;403"/>
+   <todo name="TODO: this is now unused; remove later along with prev()" pos="3;1070"/>
+   <todo name="TODO:v6 remove boolean support" pos="3;1286"/>
+   <todo name="TODO use `document.visibilityState`" pos="11;1333"/>
+   <todo name="todo: change tests that use empty divs to avoid this check" pos="7;1538"/>
+   <todo name="todo: v6 revert #37011 &amp; change markup https://getbootstrap.com/docs/5.2/forms/input-group/" pos="5;2038"/>
+   <todo name="todo:v6 remove" pos="69;2258"/>
+   <todo name="todo: v6 revert #37011 &amp; change markup https://getbootstrap.com/docs/5.2/forms/input-group/" pos="29;2356"/>
+   <todo name="todo v6 remove this OR make it optional" pos="7;3874"/>
+   <todo name="todo: remove this check on v6" pos="61;3991"/>
+   <todo name="todo: on v6 the following can be achieved with CSS only" pos="65;3998"/>
+   <todo name="TODO: v6 @deprecated, keep it for backwards compatibility reasons" pos="3;4424"/>
+   <todo name="TODO v6 @deprecated, keep it for backwards compatibility reasons" pos="3;4432"/>
+   <todo name="TODO: on v6 target should be given explicitly &amp; remove the {target: 'ss-target'} case" pos="5;4496"/>
+   <todo name="TODO: v6 Only for backwards compatibility reasons. Use rootMargin only" pos="65;4497"/>
+   <todo name="todo:v6: could be only `tab`" pos="106;4720"/>
+   <todo name="todo: should Throw exception on v6" pos="15;4734"/>
+  </todofile>
+  <todofile name="C:\xampp\htdocs\1403\bootstrap\js\bootstrap.js">
+   <todo name="todo: tooltip passes `false` instead of selector, so we need to check" pos="54;427"/>
+   <todo name="TODO: this is now unused; remove later along with prev()" pos="5;1094"/>
+   <todo name="TODO:v6 remove boolean support" pos="5;1310"/>
+   <todo name="TODO use `document.visibilityState`" pos="13;1357"/>
+   <todo name="todo: change tests that use empty divs to avoid this check" pos="9;1562"/>
+   <todo name="todo: v6 revert #37011 &amp; change markup https://getbootstrap.com/docs/5.2/forms/input-group/" pos="7;2062"/>
+   <todo name="todo:v6 remove" pos="71;2282"/>
+   <todo name="todo: v6 revert #37011 &amp; change markup https://getbootstrap.com/docs/5.2/forms/input-group/" pos="31;2380"/>
+   <todo name="todo v6 remove this OR make it optional" pos="9;3898"/>
+   <todo name="todo: remove this check on v6" pos="63;4015"/>
+   <todo name="todo: on v6 the following can be achieved with CSS only" pos="67;4022"/>
+   <todo name="TODO: v6 @deprecated, keep it for backwards compatibility reasons" pos="5;4448"/>
+   <todo name="TODO v6 @deprecated, keep it for backwards compatibility reasons" pos="5;4456"/>
+   <todo name="TODO: on v6 target should be given explicitly &amp; remove the {target: 'ss-target'} case" pos="7;4520"/>
+   <todo name="TODO: v6 Only for backwards compatibility reasons. Use rootMargin only" pos="67;4521"/>
+   <todo name="todo:v6: could be only `tab`" pos="108;4744"/>
+   <todo name="todo: should Throw exception on v6" pos="17;4758"/>
+  </todofile>
+ </todoblock>
+ <dbgurls/>
+ <lasttime value="1666623892"/>
+</project>
